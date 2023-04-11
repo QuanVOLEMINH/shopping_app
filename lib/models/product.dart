@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
 
 class Product {
-  final String image, title, description;
+  final String image, title, description, type;
   final int price, size, id;
   final Color color;
 
-  Product({
-    required this.id,
-    required this.image,
-    required this.title,
-    required this.price,
-    required this.description,
-    required this.size,
-    required this.color,
-  });
+  Product(
+      {required this.id,
+      required this.image,
+      required this.title,
+      required this.price,
+      required this.description,
+      required this.size,
+      required this.color,
+      required this.type});
 }
 
 List<Product> products = [
   Product(
       id: 1,
       title: "Office Code",
+      type: "Aristocratic Hand Bag",
       price: 234,
       size: 12,
       description: dummyText,
@@ -28,6 +29,7 @@ List<Product> products = [
   Product(
       id: 2,
       title: "Belt Bag",
+      type: "Aristocratic Hand Bag",
       price: 22,
       size: 8,
       description: dummyText,
@@ -36,6 +38,7 @@ List<Product> products = [
   Product(
       id: 3,
       title: "Hang Top",
+      type: "Aristocratic Hand Bag",
       price: 123,
       size: 10,
       description: dummyText,
@@ -44,6 +47,7 @@ List<Product> products = [
   Product(
       id: 4,
       title: "Old Fashion",
+      type: "Aristocratic Hand Bag",
       price: 100,
       size: 11,
       description: dummyText,
@@ -52,6 +56,7 @@ List<Product> products = [
   Product(
       id: 5,
       title: "Office Code",
+      type: "Aristocratic Hand Bag",
       price: 350,
       size: 12,
       description: dummyText,
@@ -60,6 +65,7 @@ List<Product> products = [
   Product(
     id: 6,
     title: "Office Code",
+    type: "Aristocratic Hand Bag",
     price: 1000,
     size: 12,
     description: dummyText,
